@@ -10,6 +10,7 @@ public class Project {
     //A must be built before B. Each node also tracks the number of incoming edges
     private ArrayList<Project> children = new ArrayList<>();
     private HashMap<String, Project> map = new HashMap<String, Project>();
+    private State state;
 
     public String getName() {
         return name;
@@ -25,6 +26,7 @@ public class Project {
 
     public Project(String n){
         name = n;
+        state = State.BLANK;
     }
 
     public void addNeighbour(Project node){
@@ -47,5 +49,17 @@ public class Project {
     @Override
     public String toString() {
         return name;
+    }
+
+    public State getState() {
+        return state;
+    }
+
+    public void setState(State state) {
+        this.state = state;
+    }
+
+    public enum State {
+        BLANK, PARTIAL, COMPLETED
     }
 }
