@@ -8,7 +8,8 @@ You are given a list of projects and a list of dependencies (which is a list of 
 EXAMPLE
 
 Input:
-  projects: a, b, c, d, e, f
-  dependecies: (d, a), (b, f), (d, b), (a, f), (c, d)
+projects: a, b, c, d, e, f
+dependecies: (d, a), (b, f), (d, b), (a, f), (c, d)
 
 Output: f, e, a, b, d, c
+
