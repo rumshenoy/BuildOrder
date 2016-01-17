@@ -13,3 +13,7 @@ dependecies: (d, a), (b, f), (d, b), (a, f), (c, d)
 
 Output: f, e, a, b, d, c
 
+Solutions:
+- Use topoligical sort
+- use DFS
+
